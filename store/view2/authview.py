@@ -22,7 +22,7 @@ def loginpage(request):
 
         if request.method == 'POST':
             name = request.POST.get('username')
-            pawd = request.POST.get('passoword')
+            pawd = request.POST.get('password')
 
             user = authenticate(request, username=name, password = pawd)
             if user is not None:
